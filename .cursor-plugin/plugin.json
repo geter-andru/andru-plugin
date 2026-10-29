@@ -18,5 +18,10 @@
   ],
   "logo": "assets/icon.png",
   "skills": "./skills/",
-  "mcpServers": "./.mcp.json"
+  "mcpServers": {
+    "andru": {
+      "type": "http",
+      "url": "https://mcp.andru-ai.com/mcp?signin=first"
+    }
+  }
 }
