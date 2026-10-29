@@ -18,5 +18,6 @@
     "icp",
     "meeting-prep",
     "b2b"
-  ]
+  ],
+  "icon": "assets/icon.png"
 }

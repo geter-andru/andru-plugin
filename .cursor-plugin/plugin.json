@@ -16,6 +16,7 @@
     "meeting-prep",
     "b2b"
   ],
+  "logo": "assets/icon.png",
   "skills": "./skills/",
   "mcpServers": "./.mcp.json"
 }
