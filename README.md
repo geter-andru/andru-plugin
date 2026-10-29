@@ -5,14 +5,14 @@ Andru is an enterprise buyer specialist for complex B2B deals. This plugin gives
 ## What's in it
 
 - **A skill** (`skills/andru/SKILL.md`): when to use Andru, which tool answers which question, when to ask the person before a paid call, and how long to wait on longer jobs.
-- **A connector** (`.mcp.json`): Andru's hosted MCP server at `https://mcp.andru-ai.com/mcp`. Claude and Cursor read the same file.
+- **A connector**: Andru's hosted MCP server. Claude reads `.mcp.json` (`https://mcp.andru-ai.com/mcp`); Cursor uses the address in `.cursor-plugin/plugin.json` (`https://mcp.andru-ai.com/mcp?signin=first`), which asks you to sign in before connecting.
 - **Two manifests**: `.claude-plugin/plugin.json` for Claude and `.cursor-plugin/plugin.json` for Cursor.
 
 There is no code in this plugin: no scripts, no hooks, no local server, and nothing installed on your computer.
 
 ## What it connects to and sends
 
-- Claude or Cursor connects to `https://mcp.andru-ai.com/mcp`. You sign in with your Andru account through Andru's sign-in page at `https://api.andru-ai.com`; no key is stored in the plugin.
+- Claude connects to `https://mcp.andru-ai.com/mcp` and Cursor to `https://mcp.andru-ai.com/mcp?signin=first`. You sign in with your Andru account through Andru's sign-in page at `https://api.andru-ai.com`; no key is stored in the plugin.
 - When Claude or Cursor uses a tool, it sends Andru what that tool needs: company websites and names, buyer titles, deal details, and your email if you sign up from the chat.
 - Andru answers from your Andru account. Nothing is sent anywhere else, and the plugin reads no files on your computer.
 
