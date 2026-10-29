@@ -1,0 +1,21 @@
+{
+  "name": "andru",
+  "version": "1.0.0",
+  "description": "Andru, the enterprise buyer specialist: knows your buyers, scores companies and deals the same way every time, and prepares you for real buyer conversations.",
+  "author": {
+    "name": "Humus & Shore",
+    "email": "geter@andru-ai.com"
+  },
+  "homepage": "https://andru-ai.com/docs/mcp",
+  "repository": "https://github.com/geter-andru/andru-plugin",
+  "license": "MIT",
+  "keywords": [
+    "sales",
+    "buyers",
+    "icp",
+    "meeting-prep",
+    "b2b"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}
